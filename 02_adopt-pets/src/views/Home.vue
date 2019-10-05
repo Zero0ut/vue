@@ -1,8 +1,9 @@
 <template>
-  <div class="home">
+  <div class="home-view-container">
     <h1>Adopt a new best friend.</h1>
     {{ getAllCats.length }}
     {{ animalsCount }}
+    
     <button @click="togglePetForm" class="btn btn-primary">Add New Pet</button>
 
     <!-- @submit.prevent is modified calling event.prevent default -->
