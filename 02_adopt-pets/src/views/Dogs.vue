@@ -1,7 +1,14 @@
 <template>
   <div>
     <h1>Dogs for Adoption</h1>
-    <b-table striped hover :items="dogs" />
+    <b-table striped hover :items="dogs">
+      <template v-slot:cell(name)="data">
+        <!-- <router-link :to="`#${data.value.replace(/[^a-z]+/i,'-').toLowerCase()}`">{{ data.value }}</router-link>-->
+        <router-link :to="`/pets/dogs/${data.index}`">
+          {{ data.value }}
+        </router-link>
+      </template>
+    </b-table>
   </div>
 </template>
 
