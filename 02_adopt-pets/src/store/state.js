@@ -4,5 +4,6 @@ import dogs from '../data/dogs'
 // Default State
 export default {
     cats,
-    dogs
+    dogs,
+    pets: [...cats, ...dogs]
 }
