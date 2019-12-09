@@ -3,7 +3,7 @@
     <h1>Adopt a new best friend.</h1>
     {{ getAllCats.length }}
     {{ animalsCount }}
-    
+
     <button @click="togglePetForm" class="btn btn-primary">Add New Pet</button>
 
     <!-- @submit.prevent is modified calling event.prevent default -->
@@ -48,7 +48,7 @@
 import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'home',
-  data() {
+  data () {
     return {
       showPetForm: false,
       formData: {
@@ -68,12 +68,12 @@ export default {
     ...mapActions([
       'addPet'
     ]),
-    togglePetForm() {
+    togglePetForm () {
       this.showPetForm = !this.showPetForm
     },
-    handleSubmit() {
+    handleSubmit () {
       const { species, age, name } = this.formData
-      const payload = {        
+      const payload = {
         species,
         pet: {
           name,

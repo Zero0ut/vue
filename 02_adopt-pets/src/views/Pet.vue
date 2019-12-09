@@ -27,7 +27,7 @@ export default {
       'dogs'
     ])
   },
-  mounted() {
+  mounted () {
     const animal = this[this.$route.params.species][this.$route.params.id]
     this.animal = animal
   }

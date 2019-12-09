@@ -3,7 +3,7 @@ import dogs from '../data/dogs'
 
 // Default State
 export default {
-    cats,
-    dogs,
-    pets: [...cats, ...dogs]
+  cats,
+  dogs,
+  pets: [...cats, ...dogs]
 }
